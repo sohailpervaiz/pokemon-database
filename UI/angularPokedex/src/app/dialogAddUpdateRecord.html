@@ -1,0 +1,43 @@
+<h1 mat-dialog-title>{{data.flag ? "Update Record": "Add Record"}} </h1>
+<div mat-dialog-content>
+    <div style="text-align: center;">
+        <img [src]="data.pokedex.Img" width="72" height="72" />
+    </div>
+    <div>
+        <mat-form-field class="matFormField" style="width: 100%;">
+            <mat-label>Image Url</mat-label>
+            <input matInput [(ngModel)]="data.pokedex.Img">
+          </mat-form-field>
+    </div>
+  <mat-form-field class="matFormField">
+    <mat-label>Id</mat-label>
+    <input matInput [(ngModel)]="data.pokedex.Id">
+  </mat-form-field>
+  <mat-form-field class="matFormField">
+    <mat-label>National No</mat-label>
+    <input matInput [(ngModel)]="data.pokedex.Num">
+  </mat-form-field>
+  <mat-form-field class="matFormField">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.pokedex.Name">
+  </mat-form-field>
+  <mat-form-field class="matFormField">
+    <mat-label>Type
+    </mat-label>
+    <input matInput [(ngModel)]="data.pokedex.Type">
+  </mat-form-field>
+  <mat-form-field class="matFormField">
+    <mat-label>Height
+    </mat-label>
+    <input matInput [(ngModel)]="data.pokedex.Height">
+  </mat-form-field>
+  <mat-form-field class="matFormField">
+    <mat-label>Weight
+    </mat-label>
+    <input matInput [(ngModel)]="data.pokedex.Weight">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="onNoClick()">Close</button>
+  <button mat-raised-button color="primary" (click)="data.flag ? updatePokedex() : addPokedex() " cdkFocusInitial>{{data.flag ? "Update": "Add"}}</button>
+</div>

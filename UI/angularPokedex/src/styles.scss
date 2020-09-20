@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    flex: 1 1 auto;
+  }
+ 
+  .amd-card {
+    padding: 0px;
+}
+.amd-card-header {
+    padding: 10px 0px 0px 10px;;
+}
+.amd-card-content {
+    padding: 20px;
+}
+.amd-table {
+    width: 100%;
+}
+.amd-form_field {
+    width: 100%
+}
+.matFormField{
+    margin-left: 20px;
+}
