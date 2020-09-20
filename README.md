@@ -26,4 +26,34 @@ Run the Django Server
 python manage.py runserver
 ```
 
+You should see server runing on
+
+```
+Django version 3.1.1, using settings 'DjangoPokedex.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
+
+
 # Local Run Frontend Angular
+Navigate to folder UI/angularPokedex/
+
+```
+cd  pokemon-database/UI/angularPokedex/
+```
+Download required node package
+
+```
+npm install
+```
+
+Run the Angular project
+
+```
+ng serve -open
+```
+
+{>;} Happy Coding !
+
+
+
